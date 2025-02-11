@@ -88,6 +88,10 @@ Setting num_epochs too low might result in underfitting, where the model does no
 
 ![alt text](image-3.png)
 
+
+**Tested with 250 hidden layers and num_epochs = 200 the accuracy went up Test accuracy: 91.19%**
+
+
 ### Questions to Answer
 
 1. How long have you trained the network?
