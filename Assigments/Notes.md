@@ -16,7 +16,7 @@ Data augmentation is a technique used to increase the diversity of your training
 ### Generate a Multilayer Perceptron (MLP) for MNIST
 - Run the example and obtain results
 
-'''
+```
 # Hyperparameters
 
 num_classes = 10  # this is the number of digits
@@ -24,7 +24,7 @@ num_epochs = 5
 batch_size = 100
 learning_rate = 0.001
 hidden_size = 16
-'''
+```
 
 Test accuracy: 89.56%
 
@@ -36,7 +36,7 @@ Test accuracy: 89.56%
 - Evaluate the model on a validation set
 - Report accuracy and discuss any challenges encountered
 
-'''
+```
 # Hyperparameters only modifying the hidden_size
 
 num_classes = 10  # this is the number of digits
@@ -44,14 +44,14 @@ num_epochs = 5
 batch_size = 100
 learning_rate = 0.001
 hidden_size = 32
-'''
+```
 
 Test accuracy: 90.44%
 
 ![alt text](image-1.png)
 
 
-'''
+```
 # Hyperparameters doubling the hidden_size + epochs
 
 num_classes = 10  # this is the number of digits
@@ -59,11 +59,11 @@ num_epochs = 10
 batch_size = 100
 learning_rate = 0.001
 hidden_size = 32
-'''
+```
 
 Test accuracy: 90.37% >> worse accuracy
 
-'''
+```
 # Hyperparameters doubling the hidden_size + epochs
 
 num_classes = 10  # this is the number of digits
@@ -71,7 +71,7 @@ num_epochs = 30
 batch_size = 100
 learning_rate = 0.001
 hidden_size = 32
-'''
+```
 
 Test accuracy: 90.41% >> worse accuracy
 
