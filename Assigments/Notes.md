@@ -121,32 +121,31 @@ For example, if the confusion matrix shows that the model frequently misclassifi
 
 # Confusion Matrixes for each Iteration and Accuracy Plots for each Iteration
 
-iteration 1
+### iteration 1
 
 ![iteration_1](image-4.png)
 
-
-iteration 2
+### iteration 2
 
 ![iteration_2](image-6.png)
 
-iteration 3
+### iteration 3
 
 ![iteration_3](image-7.png)
 
-iteration 4
+### iteration 4
 
 ![iteration_4](image-8.png)
 
-iteration 5
+### iteration 5
 
 ![iteration_5](image-9.png)
 
-iteration 6
+### iteration 6
 
 ![iteration_6](image-10.png)
 
-iteration 7
+### iteration 7
 
 ![iteration_7](image-11.png)
 
