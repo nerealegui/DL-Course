@@ -138,3 +138,13 @@ For example, if the confusion matrix shows that the model frequently misclassifi
 2. What accuracy do you obtain with this program?
 3. What do you see analyzing the confusion matrix?
 4. Do you think the program is overfitting by looking at the Loss/Accuracy plots?
+
+In this section, we will iterate through different configurations of the MLP model to observe the impact on performance. The iterations will include changes in the number of hidden layers, the number of neurons, and the activation functions used.
+
+1. **Iteration 1: Increase the number of hidden layers to 2**
+2. **Iteration 2: Increase the number of neurons in the hidden layer to 500**
+3. **Iteration 3: Change the activation function to 'tanh'**
+4. **Iteration 4: Combine iterations 1 and 2**
+5. **Iteration 5: Combine iterations 1, 2, and 3**
+
+We will create a new notebook to implement these iterations and observe the results.
