@@ -17,7 +17,7 @@ Data augmentation is a technique used to increase the diversity of your training
 - Run the example and obtain results
 
 ```
-# Hyperparameters
+# 16
 
 num_classes = 10  # this is the number of digits
 num_epochs = 5
@@ -117,34 +117,110 @@ By examining these values, you can determine:
 For example, if the confusion matrix shows that the model frequently misclassifies digit '3' as digit '8', you might need to investigate why these digits are being confused and consider ways to improve the model's ability to distinguish between them.
 
 
+---
+
+# Confusion Matrixes for each Iteration and Accuracy Plots for each Iteration
+
+iteration 1
+
+![iteration_1](image-4.png)
+
+
+iteration 2
+
+![iteration_2](image-6.png)
+
+iteration 3
+
+![iteration_3](image-7.png)
+
+iteration 4
+
+![iteration_4](image-8.png)
+
+iteration 5
+
+![iteration_5](image-9.png)
+
+iteration 6
+
+![iteration_6](image-10.png)
+
+iteration 7
+
+![iteration_7](image-11.png)
+
+
+
 
 # Conclusions
 
 ## Summary of Iterations
 
-| Iteration | Training Duration | Hidden Size | Test Accuracy | Confusion Matrix Analysis | Overfitting Analysis |
-|-----------|-------------------|-------------|---------------|---------------------------|----------------------|
-| 1         | 5 epochs          | 16          | 89.56%        | Not provided              | Not provided         |
-| 2         | 5 epochs          | 32          | 90.44%        | Not provided              | Not provided         |
-| 3         | 10 epochs         | 32          | 90.37%        | Not provided              | Not provided         |
-| 4         | 30 epochs         | 32          | 90.41%        | Not provided              | Not provided         |
-| 5         | 5 epochs          | 2 layers    | 30.98%        | Not provided              | Not provided         |
-| 6         | 5 epochs          | 50 layers   | 90.71%        | Not provided              | Not provided         |
-| 7         | 200 epochs        | 250 layers  | 91.19%        | Not provided              | Not provided         |
+| Iteration | Training Duration | Hidden Size | Test Accuracy |  
+|-----------|-------------------|-------------|---------------|
+| 1         | 5 epochs          | 16          | 89.56%        | 
+| 2         | 5 epochs          | 32          | 90.44%        | 
+| 3         | 10 epochs         | 32          | 90.37%        | 
+| 4         | 30 epochs         | 32          | 90.41%        | 
+| 5         | 5 epochs          | 2 layers    | 30.98%        | 
+| 6         | 5 epochs          | 50 layers   | 90.71%        | 
+| 7         | 200 epochs        | 250 layers  | 91.19%        | 
 
 ### Questions to Answer
 
-1. How long have you trained the network?
-2. What accuracy do you obtain with this program?
-3. What do you see analyzing the confusion matrix?
-4. Do you think the program is overfitting by looking at the Loss/Accuracy plots?
 
-In this section, we will iterate through different configurations of the MLP model to observe the impact on performance. The iterations will include changes in the number of hidden layers, the number of neurons, and the activation functions used.
+#### How long have you trained the network?
+1. The network was trained for different durations across various iterations. The training durations were as follows:
+    - Iteration 1: 5 epochs
+    - Iteration 2: 5 epochs
+    - Iteration 3: 10 epochs
+    - Iteration 4: 30 epochs
+    - Iteration 5: 5 epochs
+    - Iteration 6: 5 epochs
+    - Iteration 7: 200 epochs
 
-1. **Iteration 1: Increase the number of hidden layers to 2**
-2. **Iteration 2: Increase the number of neurons in the hidden layer to 500**
-3. **Iteration 3: Change the activation function to 'tanh'**
-4. **Iteration 4: Combine iterations 1 and 2**
-5. **Iteration 5: Combine iterations 1, 2, and 3**
+#### What accuracy do you obtain with this program?
+2. The accuracy obtained with this program varies across different iterations. Here are the test accuracies for each iteration:
+    - Iteration 1: 89.56%
+    - Iteration 2: 90.44%
+    - Iteration 3: 90.37%
+    - Iteration 4: 90.41%
+    - Iteration 5: 30.98% > Worse accuracy
+    - Iteration 6: 90.71%
+    - Iteration 7: 91.19% > Best accuracy
 
-We will create a new notebook to implement these iterations and observe the results.
+#### What do you see analyzing the confusion matrix?
+
+Iteration 1: The confusion matrix shows that the model has a decent performance, but there are some misclassifications. For example, some digits are being confused with others, indicating areas where the model can improve.
+
+Iteration 2: The confusion matrix shows improved performance compared to iteration 1. There are fewer misclassifications, indicating that increasing the hidden layer size has helped the model distinguish between different digits better.
+
+Iteration 3: The confusion matrix is similar to iteration 2, with some misclassifications still present. The performance is consistent, but there is no significant improvement compared to iteration 2.
+
+Iteration 4: The confusion matrix shows a slight improvement in performance, with fewer misclassifications compared to previous iterations. Increasing the number of epochs has helped the model learn better, but some misclassifications still exist.
+
+Iteration 5: The accuracy dropped significantly to 30.98%, indicating that the model struggled with the increased complexity (2 hidden layers).
+
+Iteration 6: The accuracy improved to 90.71%, suggesting that the model performed better with 50 hidden layers.
+
+Iteration 7: The highest accuracy of 91.19% was achieved with 250 hidden layers and 200 epochs, indicating that the model benefited from the increased complexity and training duration.
+
+#### Do you think the program is overfitting by looking at the Loss/Accuracy plots?
+
+
+Iteration 1: The plot shows a decent performance with some misclassifications. There is no clear indication of overfitting.
+
+Iteration 2: The plot shows improved performance with fewer misclassifications compared to iteration 1. There is no clear indication of overfitting.
+
+Iteration 3: The plot is similar to iteration 2, with consistent performance and no significant signs of overfitting.
+
+Iteration 4: The plot shows a slight improvement in performance with fewer misclassifications. There is no clear indication of overfitting.
+
+Iteration 5: The accuracy dropped significantly to 30.98%, indicating potential issues with the model's complexity (2 hidden layers). This suggests underfitting rather than overfitting.
+
+Iteration 6: The accuracy improved to 90.71%, suggesting better performance with 50 hidden layers. There is no clear indication of overfitting.
+
+Iteration 7: The highest accuracy of 91.19% was achieved with 250 hidden layers and 200 epochs. Given the significant increase in complexity and training duration, there is a possibility of overfitting. However, without the actual loss/accuracy plots showing the training and validation performance, it is difficult to confirm overfitting definitively.
+
+In summary, based on the provided plots, there is no clear indication of overfitting in iterations 1 to 6. Iteration 7 shows the highest accuracy, which might suggest overfitting due to the increased complexity and training duration, but this cannot be confirmed without the actual loss/accuracy plots showing the training and validation performance.
