@@ -116,5 +116,25 @@ By examining these values, you can determine:
 
 For example, if the confusion matrix shows that the model frequently misclassifies digit '3' as digit '8', you might need to investigate why these digits are being confused and consider ways to improve the model's ability to distinguish between them.
 
-Would you like to see an example of a confusion matrix and how to interpret it?
 
+
+# Conclusions
+
+## Summary of Iterations
+
+| Iteration | Training Duration | Hidden Size | Test Accuracy | Confusion Matrix Analysis | Overfitting Analysis |
+|-----------|-------------------|-------------|---------------|---------------------------|----------------------|
+| 1         | 5 epochs          | 16          | 89.56%        | Not provided              | Not provided         |
+| 2         | 5 epochs          | 32          | 90.44%        | Not provided              | Not provided         |
+| 3         | 10 epochs         | 32          | 90.37%        | Not provided              | Not provided         |
+| 4         | 30 epochs         | 32          | 90.41%        | Not provided              | Not provided         |
+| 5         | 5 epochs          | 2 layers    | 30.98%        | Not provided              | Not provided         |
+| 6         | 5 epochs          | 50 layers   | 90.71%        | Not provided              | Not provided         |
+| 7         | 200 epochs        | 250 layers  | 91.19%        | Not provided              | Not provided         |
+
+### Questions to Answer
+
+1. How long have you trained the network?
+2. What accuracy do you obtain with this program?
+3. What do you see analyzing the confusion matrix?
+4. Do you think the program is overfitting by looking at the Loss/Accuracy plots?
